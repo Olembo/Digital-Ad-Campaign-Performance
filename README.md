@@ -1,6 +1,6 @@
 # Digital Ad Campaign Performance Analysis
 
-**Author:** [Devin Richmond]  
+**Author:** Devin Richmond
 **Tools Used:** Excel, Python (for data cleaning) 
 **Data:** Simulated ad campaign data, 2023–2025 (37,000 daily records)
 
@@ -83,8 +83,11 @@ The goal is to surface actionable insights and recommendations to optimize digit
 ## Folder Structure
 
 ├── Raw_Data.xlsx
+
 ├── [Workbook]_Cleaned.xlsx
+
 ├── Issues_Log.xlsx
+
 └── README.md
 
 ---

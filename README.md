@@ -1,76 +1,94 @@
-# Digital-Ad-Campaign-Performance
+# Digital Ad Campaign Performance Analysis
 
-Digital Ad Campaign Performance Analysis
-Author: [Your Name]
-Tools: Excel, Python (for cleaning), [optionally add: Power BI/Tableau if used]
+**Author:** [Devin Richmond]  
+**Tools Used:** Excel, Python (for data cleaning) 
+**Data:** Simulated ad campaign data, 2023–2025 (37,000 daily records)
 
-Project Overview
-This project analyzes a simulated digital advertising campaign dataset (33,821 daily records, 2023–2025) to uncover trends, ROI drivers, and actionable recommendations for campaign optimization.
+---
 
-Data Cleaning
-Standardized date formats, removed non-date values
+## Project Overview
 
-Mapped country codes to full names
+This project analyzes digital advertising campaign data for multiple countries and platforms (2023–2025), focusing on campaign spend, revenue, engagement (impressions, clicks), and efficiency metrics (ROAS, CTR, CPC).  
+The goal is to surface actionable insights and recommendations to optimize digital marketing strategy and resource allocation.
 
-Unified currencies and converted all spend/revenue to USD
+---
 
-Handled missing values and inconsistent formats in all key columns
+## Files Included
 
-Created an Issues Log to document all data quality fixes
+- **Raw_Data.xlsx**: Original, unmodified dataset  
+- **[Workbook]_Cleaned.xlsx**: Cleaned dataset + full EDA, charts, and analysis (multi-tab Excel file)  
+- **Issues_Log.xlsx**: Documentation of all data quality issues and resolutions (also a sheet in EDA workbook)  
+- **README.md**: This file
 
-Exploratory Data Analysis
-Descriptive statistics: Spend, revenue, impressions, and clicks summarized for the full dataset.
+---
 
-Distribution analysis: Most campaigns are low-budget; revenue is concentrated in a handful of campaigns/days.
+## Data Cleaning & Preparation
 
-Segmentation:
+- Standardized date formats and removed non-date values  
+- Mapped country codes/abbreviations to full names  
+- Unified currency formats and converted all Spend/Revenue to USD  
+- Addressed missing, blank, or inconsistent values in all core columns  
+- Documented every issue and fix in the Issues Log sheet
 
-By region—spend/revenue mostly from 5 markets
+---
 
-By platform—Instagram and Twitter most efficient by ROAS
+## Exploratory Data Analysis (EDA)
 
-By campaign/channel/status—Top 10 campaigns drive outsized impact, with room for budget reallocation.
+- **Descriptive statistics**: Spend, Revenue, Impressions, Clicks (row count, blanks, avg, min, max, sum)
+- **Distribution analysis**: Spend/revenue/click/impression histograms reveal campaign mix and outliers
+- **Segmentation**:  
+    - **By country:** Most spend/revenue from 5 major markets; smaller markets contribute little in USD
+    - **By platform:** Instagram, Twitter, Facebook, Google, LinkedIn, TikTok
+    - **By campaign/channel/status:** Top 10 campaigns account for outsized revenue; many campaigns are “paused” or “ended”
+- **Time trend analysis:** Stable spend/revenue/engagement over quarters, with occasional peaks for promotions or campaigns
+- **Efficiency metrics:**  
+    - **ROAS (Return on Ad Spend)**: Revenue / Spend  
+    - **CTR (Click-Through Rate)**: Clicks / Impressions  
+    - **CPC (Cost per Click)**: Spend / Clicks  
+    - Calculated and visualized by region and platform
 
-Time trends: Spend, revenue, and engagement are stable, suggesting reliable delivery and no major “crashes” or booms.
+---
 
-Efficiency metrics:
+## Key Insights
 
-ROAS, CTR, CPC calculated and visualized for both region and platform
+- **Spend and revenue are highly concentrated:** Most comes from UK, US, Singapore, Canada, Australia; top 10 campaigns drive most revenue.
+- **Most daily campaigns are low-budget:** Only a few have very high spend.
+- **Revenue consistently exceeds spend:** High efficiency (ROAS) in Australia, Singapore, Instagram.
+- **Platform differences:** Instagram and Twitter deliver higher ROAS; Facebook has highest CTR; Google and LinkedIn lowest CPC.
+- **Stable campaign delivery:** Impressions/clicks stable over time; reliable ad delivery and engagement.
+- **Many paused or ended campaigns:** Opportunity to reactivate or reallocate budget.
 
-Clear differences in efficiency across both dimensions
+---
 
-Key Insights
-Spend and revenue are concentrated in a few large markets and campaigns.
+## Recommendations
 
-Instagram delivers the highest ROAS by platform; Australia and Singapore by region.
+- **Reallocate budget** to high-performing regions (Australia, Singapore) and platforms (Instagram, Twitter).
+- **Test increased budgets** in small, high-ROAS markets to check if returns scale.
+- **Monitor and diagnose low-revenue days** or underperforming campaigns.
+- **Review paused campaigns** for possible reactivation or lessons learned.
+- **Focus optimization** on platforms and creatives driving high engagement and ROI.
+- **Continue tracking efficiency metrics** (ROAS, CPC, CTR) for ongoing optimization.
 
-Campaign delivery and engagement are consistent, but optimization potential exists in lower-performing or paused campaigns.
+---
 
-Recommendations
-Shift budget toward high-ROAS markets and platforms.
+## What I Learned
 
-Monitor and diagnose low-performing campaigns/days.
+- End-to-end data cleaning and documentation in Excel and Python  
+- Business-focused EDA and visualization (Storytelling with Data best practices)  
+- Framing recommendations for marketing decision-makers  
+- Translating messy, real-world data into clear, actionable insights
 
-Test budget increases in top-performing segments.
+---
 
-Reevaluate paused/ended campaigns for reactivation or learnings.
+## Folder Structure
 
-Continue tracking ROI, CPC, and CTR over time to adapt to changing market dynamics.
+├── Raw_Data.xlsx
+├── [Workbook]_Cleaned.xlsx
+├── Issues_Log.xlsx
+└── README.md
 
-Files Included
-Raw_Data.xlsx: Original dataset
+---
 
-Data_Cleaned.xlsx: Fully cleaned data ready for analysis
+## Contact
 
-[Workbook].xlsx: All EDA, charts, summary sheets, and recommendations
-
-Issues_Log.xlsx: Full documentation of data quality challenges and resolutions
-
-What I Learned
-Advanced data cleaning and documentation in Excel & Python
-
-End-to-end EDA, business-driven visualization, and storytelling
-
-Framing insights and recommendations for business impact
-
-For questions or feedback, contact [your contact info].
+For questions or feedback, please contact **Devin Richmond** at richmonddevin13@gmail.com.
